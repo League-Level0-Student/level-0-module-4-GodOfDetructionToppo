@@ -25,29 +25,33 @@ for(int i=0;i<pi.length();i++) {
 	speak(pi.charAt(i)); 
 	String guess=JOptionPane.showInputDialog("Guess the next number of pie");
 	if(guess.equals(pi.charAt(i)+"")) {
-		int x=10;
-		if(x<5) {
-			Syso("five!");
-		}
-		else{
-			Syso("Not five!");
-		}
-	{
+		
+		
+	//else {
 		JOptionPane.showMessageDialog(null,"Correct");
+	
+		
+		//	JOptionPane.showMessageDialog(null, "Incorrect");
+		
+		}
 	}
 	}
-}
+
 	// 5. Use the speak() method to speak all the digits of Pi.
+	
 
 	// [ADVANCED]
 	// *6. Get a character from the user using the getInputFromUser() method
 
 
 	
+		// TODO Auto-generated method stub
 
+	
 	// *7. Compare the users' char to the next digit of Pi
+	
 	// *8. If they are correct, print out "correct". If they are not, print "incorrect" to System.err.println
-	}
+	
 	static void speak(char characterToSpeak) {
 		try {
 			Runtime.getRuntime().exec("say " + characterToSpeak).waitFor();
