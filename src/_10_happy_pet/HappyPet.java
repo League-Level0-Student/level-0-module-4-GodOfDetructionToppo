@@ -1,5 +1,6 @@
 package _10_happy_pet;
 import javax.swing.JOptionPane;
+import javax.swing.JPasswordField;
 
 public class HappyPet {
 	
@@ -19,7 +20,7 @@ String happinessLevel=JOptionPane.showInputDialog("what kind of pet do you want 
 
 
 
-			int task = JOptionPane.showOptionDialog(null, "What will you do to make your pet happy", "Happy Pet", 0, JOptionPane.INFORMATION_MESSAGE, null,
+			int task = JOptionPane.showOptionDialog(null, "What would you like to do to make your pet happy", "Happy Pet", 0, JOptionPane.INFORMATION_MESSAGE, null,
 					new String[] { "Treats", "Cuddle", "Take a walk" }, null);
 
 			// 5. Use user input to call the appropriate method created in step 4.
@@ -32,5 +33,17 @@ String happinessLevel=JOptionPane.showInputDialog("what kind of pet do you want 
 	// 4. Create methods to handle each of your user selections.
 	//    Each method should create a pop-up with the pet's response (eg. cat might purr when pet), 
 	//    and INCREMENT the pet's happiness Level.
+	public static void treats() {
+		happinessLevel=happinessLevel+15;
+		JOptionPane.showMessageDialog(null,"You love your pet very much");
+	}
+	public static void Cuddle() {
+		happinessLevel=happinessLevel+20;
+		JOptionPane.showMessageDialog(null,"");
+	}
+		Take_Walk_In_Park(){
+			happinessLevel=happinessLevel+9;
+			JOptionPane.showMessageDialog(null,)
+		}
 	
 }
