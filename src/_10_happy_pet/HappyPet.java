@@ -24,11 +24,18 @@ String happinessLevel=JOptionPane.showInputDialog("what kind of pet do you want 
 					new String[] { "Treats", "Cuddle", "Take a walk" }, null);
 
 			// 5. Use user input to call the appropriate method created in step 4.
+System.out.println(task);
 
+if(task==0) {
+	treats();
+	
+	}		
+
+}
 			// 6. If you determine the happiness level is large enough, tell the
 			//    user that he loves his pet and use break; to exit for loop.
 
-	}
+	
 
 	// 4. Create methods to handle each of your user selections.
 	//    Each method should create a pop-up with the pet's response (eg. cat might purr when pet), 
@@ -39,11 +46,14 @@ String happinessLevel=JOptionPane.showInputDialog("what kind of pet do you want 
 	}
 	public static void Cuddle() {
 		happinessLevel=happinessLevel+20;
-		JOptionPane.showMessageDialog(null,"");
+		JOptionPane.showMessageDialog(null,"dsgva");
 	}
-		Take_Walk_In_Park(){
+		public static void Take_Walk_In_Park(){
 			happinessLevel=happinessLevel+9;
-			JOptionPane.showMessageDialog(null,)
+			JOptionPane.showMessageDialog(null,"Your an great pet owner");
 		}
 	
+		
+		
+		
 }
