@@ -10,15 +10,15 @@ public class HappyPet {
 
 	public static void main(String[] args) {
 		// 1. Ask the user what kind of pet they want to buy, and store their answer in a variable
-String happinessLevel=JOptionPane.showInputDialog("what kind of pet do you want to buy");
+String happinessLevel3=JOptionPane.showInputDialog("what kind of pet do you want to buy");
 
 		// 7. REPEAT steps 3 - 6 enough times to make your pet happy!
 		
 			/// 3. Use showOptionDialog to ask the user what they want to do to make their pet happy
-			//    (eg: cuddle, food, water, take a walk, groom, clean up poop).
+			//    (eg: cuddle, food, water, take a walk, groom, clean up poop(shit).
 			//    Make sure to customize the title and question too.
 
-
+while(happinessLevel<70) {
 
 			int task = JOptionPane.showOptionDialog(null, "What would you like to do to make your pet happy", "Happy Pet", 0, JOptionPane.INFORMATION_MESSAGE, null,
 					new String[] { "Treats", "Cuddle", "Take a walk" }, null);
@@ -29,8 +29,15 @@ System.out.println(task);
 if(task==0) {
 	treats();
 	
-	}		
+	}	
 
+if(task==1) {
+	Cuddle();
+}
+if(task==2) {
+	Take_Walk_In_Park();
+}
+}
 }
 			// 6. If you determine the happiness level is large enough, tell the
 			//    user that he loves his pet and use break; to exit for loop.
@@ -46,10 +53,10 @@ if(task==0) {
 	}
 	public static void Cuddle() {
 		happinessLevel=happinessLevel+20;
-		JOptionPane.showMessageDialog(null,"dsgva");
+		JOptionPane.showMessageDialog(null,"(-_-).......Ok");
 	}
 		public static void Take_Walk_In_Park(){
-			happinessLevel=happinessLevel+9;
+			happinessLevel=happinessLevel+10;
 			JOptionPane.showMessageDialog(null,"Your an great pet owner");
 		}
 	
