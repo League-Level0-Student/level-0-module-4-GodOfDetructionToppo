@@ -37,7 +37,9 @@ if(task==1) {
 if(task==2) {
 	Take_Walk_In_Park();
 }
+
 }
+JOptionPane.showMessageDialog(null," Good job");
 }
 			// 6. If you determine the happiness level is large enough, tell the
 			//    user that he loves his pet and use break; to exit for loop.
